@@ -7,34 +7,38 @@
     <title>Web Project SPAPP</title>
 
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/spapp.css">    
+    <link rel="stylesheet" href="./assets/css/spapp.css"> 
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
-        <nav role="navigation">
-            <ul>
-                <li><a href="#page1">Page 1</a>
-                <li><a href="#page2">Page 2</a>
-                <li><a href="#page3">Page 3</a>
-            </ul>
+        <nav>
+            <a class="active" href="#page1">About</a>
+            <a href="#page2">News</a>
+            <a href="#page3">Clubs</a>
+            <a href="#page4">Stats</a>
         </nav>
     </header>
+    <div class="razmak"></div>
     
-
     <section>
         <main id="spapp" role="main">
-            <section id="page1" data-load="page1.html"><h1>Page 1</h1></section>
-            <section id="page2" data-load="page2.html"><h1>Page 2</h1></section>
-            <section id="page3" data-load="page3.html"><h1>Page 3</h1></section>
+            <section id="page1" data-load="page1.html"></section>
+            <section id="page2" data-load="page2.html"></section>
+            <section id="page3" data-load="page3.html"></section>
+            <section id="page4" data-load="page4.html"></section>
         </main>
     </section>
 
-    <footer>
+    <!--<footer>
         <p>&copy; You can copy, edit and publish this template but plaese leave a link to our website | <a href="https://html15-template.com" target="_blank" rel="nofollow">HTML5 Template></a></p>
         <address>Contact: <a href="mailto:me@example.com">Mail me</a></address>
-    </footer>
+    </footer> -->
 
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/jquery.spapp.min.js"></script>
