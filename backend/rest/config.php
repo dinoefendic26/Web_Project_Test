@@ -27,12 +27,12 @@ class Database {
                 self::$connection = new PDO("mysql:host=" . Config::DB_HOST(). ";dbname=" . Config::DB_NAME(), Config::DB_USERNAME(), Config::DB_PASSWORD(),
                 [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC] );
 
-                echo ("Database connected sucesfully! <br>");
+                echo ("Database connected succesfully! <br>");
             }
             catch (PDOException $e) {
                 die("Connection failed! <br>" . $e->getMessage());
-            }
-            //return self::$connection;
+            }    
         }
+        return self::$connection;
     }
 }
